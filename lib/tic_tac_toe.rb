@@ -33,9 +33,14 @@ def valid_move?(board, index)
   !position_taken?(board, index) && index.between?(0,8)
 end
 
-def turn(board)
-end
-
 def turn_count(board)
   board.count{|position| !(position == " " || position == "")}
+end
+
+def current_player(board)
+  if turn_count % 2 == 0
+    "X"
+  else
+    "O"
+  end
 end
