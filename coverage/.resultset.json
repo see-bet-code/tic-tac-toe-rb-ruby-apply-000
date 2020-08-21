@@ -1,0 +1,46 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/persistent-loop-6281/tic-tac-toe-rb-ruby-apply-000/lib/tic_tac_toe.rb": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1597972387
+  }
+}
