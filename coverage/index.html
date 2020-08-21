@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-21T01:15:40+00:00">2020-08-21T01:15:40+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-21T01:16:13+00:00">2020-08-21T01:16:13+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.4
+         2.1
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>18</td>
         <td>18</td>
         <td>0</td>
-        <td>2.4</td>
+        <td>2.1</td>
       </tr>
       
     </tbody>
@@ -258,8 +258,8 @@
           <code class="ruby">def position_taken?(board, index)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="29">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="29">
+          <span class="hits">8</span>
           
           <code class="ruby">  [&quot;X&quot;,&quot;x&quot;,&quot;O&quot;,&quot;o&quot;].include?(board[index])</code>
         </li>
@@ -324,10 +324,10 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="40">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="2" data-linenumber="40">
+          <span class="hits">2</span>
           
-          <code class="ruby">  board.count{|position| [&quot;X&quot;,&quot;x&quot;,&quot;O&quot;,&quot;o&quot;].include?(position)}</code>
+          <code class="ruby">  board.count{|position| position_taken?(board, position)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
