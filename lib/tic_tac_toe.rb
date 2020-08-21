@@ -61,3 +61,11 @@ def won?(board)
     board.values_at(*win).all?("X") || board.values_at(*win).all?("O")}
   return win.first
 end
+
+def full?(board)
+  !board.include?(" ")
+end
+
+def draw?(board)
+  !won?(board) && full?(board)
+end
