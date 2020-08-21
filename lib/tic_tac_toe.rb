@@ -37,5 +37,5 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.count{|pos| ["X","x","O","o"].include?(board[index])}
+  board.count{|pos| ["X","x","O","o"].include?(pos)}
 end
