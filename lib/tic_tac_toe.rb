@@ -37,5 +37,5 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.count{|position| !position == " "}
+  board.count{|position| !(position == " " || position == "")}
 end
