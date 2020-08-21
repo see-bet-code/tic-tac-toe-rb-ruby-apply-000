@@ -55,3 +55,9 @@ def turn(board)
     turn(board)
   end
 end
+
+def won?(board)
+  win = WIN_COMBINATIONS.select{|win|
+    board.values_at(*win).all?("X") || board.values_at(*win).all?("O")}
+  return win.first
+end
