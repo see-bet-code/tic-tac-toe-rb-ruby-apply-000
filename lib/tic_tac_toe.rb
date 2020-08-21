@@ -37,5 +37,5 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.count{|position| position_taken?(board,board[position])}
+  board.count{|position| ["X","x","O","o"].include?(position)}
 end
