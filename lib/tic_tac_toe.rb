@@ -16,3 +16,22 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
+def input_to_index(user_input)
+  user_input.to_i - 1
+end
+
+def move(board, index, token)
+  board[index] = token
+end
+
+def position_taken?(board, index)
+  ["X","x","O","o"].include?(board[index])
+end
+
+def valid_move?(board, index)
+  !position_taken?(board, index) && index.between?(0,8)
+end
+
+def turn(board)
+end
