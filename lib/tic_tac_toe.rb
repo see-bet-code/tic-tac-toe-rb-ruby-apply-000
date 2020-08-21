@@ -69,3 +69,16 @@ end
 def draw?(board)
   !won?(board) && full?(board)
 end
+
+def over?(board)
+  won?(board) || draw?(board) || full?(board)
+end
+
+def winner(board)
+  index = won?(board)
+  if index == nil
+    nil
+  else
+    board[index.first]
+  end
+end
